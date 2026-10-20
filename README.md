@@ -54,7 +54,15 @@ npm run build      # production build in dist/
 npm run preview    # preview the production build
 ```
 
-## Deploy to GitHub Pages
+## Deploy to Vercel
+
+1. Push this project to a GitHub repository.
+2. On vercel.com, click **Add New → Project** and import the repository.
+3. Vercel detects Vite automatically (build: `npm run build`, output: `dist`). Click **Deploy**.
+
+The config switches `base` to `/` on Vercel automatically, so no changes are needed.
+
+## Deploy to GitHub Pages (alternative)
 
 1. Create a new **public** repository named `xanderblog` on GitHub (no README, no .gitignore).
 2. Push the code:

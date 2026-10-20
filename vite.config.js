@@ -1,10 +1,11 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// base must match the GitHub repository name for GitHub Pages
+// Vercel serves from the root ('/'); GitHub Pages serves from '/xanderblog/'.
+// Vercel sets VERCEL=1 during its build, so the right base is picked automatically.
 export default defineConfig({
   plugins: [react()],
-  base: '/xanderblog/',
+  base: process.env.VERCEL ? '/' : '/xanderblog/',
   build: {
     rollupOptions: {
       output: {
