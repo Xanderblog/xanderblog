@@ -1,0 +1,26 @@
+const u = (id, w = 800) => `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=${w}&q=70`
+export const img = {
+  code: u('1498050108023-c5249f4df085'),
+  code2: u('1461749280684-dccba630e2f6'),
+  code3: u('1555066931-4365d14bab8c'),
+  code4: u('1542831371-29b0f74f9713'),
+  laptop: u('1517694712202-14dd9538aa97'),
+  dashboard: u('1551288049-bebda4e38f71'),
+  analytics: u('1460925895917-afdab827c52f'),
+  design: u('1559028012-481c04fa702d'),
+  ux: u('1581291518857-4e27b48ff24e'),
+  learning: u('1516321318423-f06f85e504b3'),
+  students: u('1522202176988-66273c2fd55f'),
+  writing: u('1434030216411-0b793f4b4173'),
+  tech: u('1488590528505-98d2b5aba04b'),
+  camera: u('1502920917128-1aa500764cbd'),
+  finance: u('1554224155-6726b3ff858f'),
+  business: u('1507679799987-c73779587ccf'),
+  classroom: u('1524178232363-1fb2b075b655'),
+  study: u('1456513080510-7bf3a84b82f8'),
+  social: u('1611162617474-5b21e879e113'),
+  marketing: u('1432888498266-38ffec3eaf0a'),
+  hero: u('1522202176988-66273c2fd55f', 1400),
+  auth: u('1456513080510-7bf3a84b82f8', 1200),
+}
+export const avatar = (n) => `https://i.pravatar.cc/200?img=${n}`
